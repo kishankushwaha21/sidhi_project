@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* universal css property */
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --white-color: white;
+    --black-color: #2a2b2e;
+    --purple-color: purple;
+    --climate-color: #d2d2d2;
+    --font-black-color: black;
+    --font-color: #000;
+    --sidebar-color: #1e1e1e;
+    --dynamictxts-color: #FC6D6D;
+    --mainlink-color: purple;
+    --sidhi-color: purple;
+}
+
+.dark-theme {
+    --white-color: #212121;
+    --black-color: #edf2fc;
+    --mainlink-color: #f4e6cb;
+    --sidhi-color: #EAB3EA;
+    --font-color: #ffffff;
+    --dynamictxts-color: #FF9F9F;
+}
+
+body {
+    background-color: var(--white-color);
+    width: 100vw;
+}
+
+
+/* header containt */
+
+
+.header {
+    border-bottom: 1px solid var(--font-color);
+    width: 100vw;
+    height: 100px;
+    padding-top: 7px;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--white-color);
+    box-shadow: 0 0px 10px 0 gray;
+}
+
+.main-header {
+    margin-left: 30px;
+    width: 350px;
+}
+
+.sidhi-web-link {
+    text-decoration: none;
+}
+
+.sidhi-district-type {
+    color: var(--sidhi-color);
+    text-decoration: none;
+    transition: 0.2s;
+    width: 242px;
+    font-family: "Comic Sans MS";
+}
+
+.sidhi-district-type:hover {
+    box-shadow: 0 2px 0 0 var(--sidhi-color);
+    transform: translateY(-4px);
+}
+
+.home_bar_icon {
+    font-size: 33px;
+    position: absolute;
+    top: 11px;
+    left: 299px;
+    height: 32px;
+    width: 33px;
+    color: var(--font-color);
+}
+
+#sidhi-content {
+    color: var(--font-color);
+}
+
+.sidhi {
+    color: var(--purple-color);
+    font-size: 13px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    width: 215px;
+}
+
+.moonbar {
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    left: 373px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.moon {
+    height: 33px;
+    width: 36px;
+}
+
+.location-bar {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 40px;
+    color: var(--sidhi-color);
+}
+
+.location-bar:hover {
+    font-size: 45px;
+}
+
+.line {
+    height: 3px;
+    width: 30px;
+    background-color: var(--white-color);
+    margin: 5px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.sidebarIconToggle {
+    font-size: 43px;
+    background: white;
+    height: 25px;
+    padding: 0px;
+    width: 40px;
+    cursor: pointer;
+    color: var(--font-color);
+    border-radius: 5px;
+    transition: 0.2s;
+    background: var(--white-color);
+    display: block;
+}
+
+.sidebarIconToggle:hover {
+    font-size: 47px;
+}
+
+#openSidebarMenu {
+    position: absolute;
+    top: -50px;
+}
+
+#three-line-icon {
+    height: 47px;
+    position: relative;
+    top: -11px;
+    left: -5px;
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    background-color: #9fa0ae;
+    transform: translate(-250px, 28px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-sidebar-link {
+    color: var(--font-color);
+}
+
+#openSidebarMenu:checked~#sidebarMenu {
+    transform: translate(0px, 28px);
+
+}
+
+.menu li {
+    color: var(--font-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+
+}
+
+.line {
+    padding: 0;
+    height: 3px;
+    width: 30px;
+    background-color: var(--white-color);
+    margin: 5px;
+    border-radius: 18px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 67px;
+    margin-left: 33px;
+}
+
+.second_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 2000px;
+    top: 67px;
+    margin-left: 33px;
+}
+
+.main-link {
+    margin: 11px;
+    font-size: 21px;
+    color: var(--mainlink-color);
+    text-decoration: none;
+}
+
+.main-link {
+    transition: 0.2s linear;
+}
+
+.main-link:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 2px 0px 0 var(--mainlink-color);
+}
+
+.main {
+    padding-top: 50px;
+}
+
+.animaton-text {
+    display: flex;
+    margin-top: 50px;
+}
+
+.welcomeToSidhi {
+    font-size: 27px;
+    color: var(--font-color);
+    font-family: Arial;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .static-txt {
+    color: var(--font-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 8px;
+    height: 30px;
+    line-height: 31px;
+    overflow: hidden;
+    margin-top: -14px;
+}
+
+.dynamic-txts li {
+    color: var(--dynamictxts-color);
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+.dynamic-txts li span {
+    position: relative;
+    font-size: 27px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 27px;
+    width: 100%;
+    background-color: var(--white-color);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+.static-txt {
+    margin-top: -13px;
+    width: 125px;
+    background-color: var(--white-color);
+    font-family: "Arial narrow";
+    color: var(--font-color);
+}
+
+.sidhi-pic {
+    width: 360px;
+    display: flex;
+    position: absolute;
+    right: 7px;
+    top: 94px;
+    clip-path: polygon(29.66% 3px, 100% 0.82%, 100% 100%, 0% 100%);
+    box-shadow: 0px 0px 10px 0px gray;
+}
+
+.sidhi-content {
+    width: 54vw;
+    display: flex;
+    color: var(--black-color);
+    font-size: 22px;
+    margin-top: 57px;
+}
+
+#sidhi-content_home {
+    margin-top: 97px;
+    margin-left: 50px;
+}
+
+.main-content-of-sidhi {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.main_content_sidhi {
+    width: 400px;
+    display: inline-block;
+    margin-top: 160px;
+    border-left: 1px solid #4a4a4a;
+    padding: 13px;
+    border-radius: 16px;
+    margin-left: auto;
+    border-bottom: 1px solid #4a4a4a;
+    box-shadow: 8px 10px 9px -5px gray;
+    background-color: var(--climate-color);
+    text-align: left;
+}
+
+.main_content_sidhi:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.h1_for_font {
+    font-family: "Comic Sans MS";
+}
+
+
+/* body containt */
+
+
+.main-content-of-sidhi {
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: auto;
+    margin-left: 25px;
+    padding: 17px;
+    border: 1px solid;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.img {
+    border-radius: 11px;
+    width: 254px;
+    margin: 5px;
+    height: 120px;
+}
+
+.main-climate {
+    display: grid;
+    place-items: center;
+}
+
+h3 {
+    margin: 5px;
+}
+
+.span {
+    background-color: var(--white-color);
+    width: 100px;
+    height: 100px;
+}
+
+.extra-padding {
+    margin-top: 35px;
+}
+
+.main_footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    top: 193px;
+    z-index: 2;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15;
+    animation: animateWave 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+.container_footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* footer containt */
+
+
+.footer_bottom {
+    background-color: #7a7a7a;
+    padding: 70px 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.image_footer {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-col ul li:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-size: 21px;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.namekishankushwaha {
+    color: white;
+    width: 298px;
+    font-family: "Brush Script MT";
+}
+
+
+/* media and animation property */
+
+
+@media (max-width:993px) {
+    .sidhi-pic {
+        width: 360px;
+        display: flex;
+        position: absolute;
+        top: -1000px;
+        clip-path: polygon(32.83% 8px, 100% 0%, 100% 100%, 0% 100%);
+        box-shadow: 0px 0px 10px 0px gray;
+    }
+
+    #sidhi-content_home {
+        margin-left: 0px;
+    }
+
+    .sidhi-content {
+        width: 71vw;
+    }
+
+    .main-content-of-sidhi {
+        margin-top: 20px;
+    }
+
+    .main {
+        padding-top: 50px;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:655px) {
+    .home {
+        left: 900px;
+    }
+
+    .second_home {
+        left: 0px;
+    }
+}
+
+@media (max-width:465px) {
+
+    .home_bar_icon {
+        top: -33px;
+    }
+
+    .moonbar {
+        left: 290px;
+    }
+
+    .second_home {
+        top: -31px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .location-bar {
+        width: 41px;
+        display: flex;
+        position: absolute;
+        top: -87px;
+        right: 25px;
+        border-radius: 70px;
+    }
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -30px 0 30px;
+    }
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        top: -135px;
+    }
+}
